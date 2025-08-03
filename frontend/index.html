@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laptop Finder</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Laptop Finder</h1>
+        <div class="form-section">
+            <select id="brand">
+                <option value="">Brand</option>
+                <option value="HP">HP</option>
+                <option value="Dell">Dell</option>
+                <option value="Lenovo">Lenovo</option>
+                <option value="Asus">Asus</option>
+            </select>
+
+            <select id="ram">
+                <option value="">RAM</option>
+                <option value="8GB">8GB</option>
+                <option value="16GB">16GB</option>
+                <option value="32GB">32GB</option>
+            </select>
+
+            <select id="storage">
+                <option value="">Storage</option>
+                <option value="256GB SSD">256GB SSD</option>
+                <option value="512GB SSD">512GB SSD</option>
+                <option value="1TB SSD">1TB SSD</option>
+            </select>
+
+            <select id="usecase">
+                <option value="">Use Case</option>
+                <option value="gaming">Gaming</option>
+                <option value="work">Work</option>
+                <option value="student">Student</option>
+                <option value="editing">Video Editing</option>
+            </select>
+
+            <select id="battery">
+                <option value="">Battery Life</option>
+                <option value="5">5+ hours</option>
+                <option value="8">8+ hours</option>
+                <option value="12">12+ hours</option>
+            </select>
+
+            <input type="number" id="minPrice" placeholder="Min Price (₹)" />
+            <input type="number" id="maxPrice" placeholder="Max Price (₹)" />
+
+            <button id="searchBtn">Find Laptops</button>
+        </div>
+
+        <div id="results" class="results"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
