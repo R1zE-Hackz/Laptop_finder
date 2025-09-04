@@ -94,13 +94,21 @@ button:hover {
 }
 
 .result-title {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     line-height: 1.4;
     background: linear-gradient(to right, #ff00cc, #00ffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.result-snippet {
+    font-size: 14px;
+    color: #cccccc;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    flex-grow: 1;
 }
 
 .result-link {
@@ -125,4 +133,52 @@ button:hover {
     background: linear-gradient(135deg, #ff00cc, #00ffff);
     box-shadow: 0 0 20px #00ffffcc;
     color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+    
+    .form-section {
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+    
+    select,
+    input[type="number"],
+    button {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+    
+    .result-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+    
+    .form-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    select,
+    input[type="number"],
+    button {
+        width: 100%;
+        max-width: 300px;
+    }
 }
